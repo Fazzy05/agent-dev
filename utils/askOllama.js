@@ -1,6 +1,6 @@
 const { spawn } = require('child_process');
 
-module.exports = function askOllama(prompt, model = 'llama3:8b-instruct-q4_K_M') {
+async function askOllama(prompt, model = process.env.MODEL_NAME || 'llama3:8b-instruct-q4_K_M') {
   return new Promise((resolve, reject) => {
     const ollama = spawn('ollama', ['run', model]);
 
@@ -27,4 +27,6 @@ module.exports = function askOllama(prompt, model = 'llama3:8b-instruct-q4_K_M')
     ollama.stdin.write(prompt + '\n');
     ollama.stdin.end();
   });
-};
+}
+
+module.exports = { askOllama };
