@@ -47,10 +47,6 @@ A desktop application with ChatGPT-like interface for AI-powered development ass
    npm start
    ```
 
-2. **Access the Application**
-   - Desktop UI: http://localhost:3000
-   - Server API: http://localhost:3001
-
 ### Configuration
 
 1. **Environment Variables** (`.env` file):
@@ -165,3 +161,14 @@ This project is designed to be easily extensible:
 ## License
 
 MIT License - see LICENSE file for details.
+
+
+We welcome all contributors! Whether you want to:
+
+- Add new code transformations
+- Improve the CLI UI/UX
+- Integrate new local models
+- Optimize performance
+- Write docs or test cases
+
+Just open a PR or issue. Let's build an open, offline-friendly AI developer tool together!
